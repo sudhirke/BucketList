@@ -22,31 +22,43 @@ struct ContentView: View {
     
     let locations = [
         Locations(locName: "Shaniwar Wada", coordinates: CLLocationCoordinate2D(latitude: 18.5194647, longitude: 73.8527426)),
-
+        
         Locations(locName: "Okoyama Garden", coordinates: CLLocationCoordinate2D(latitude: 18.5296378, longitude: 73.8388334))
     ]
     
     var body: some View {
-        VStack {
-            Map(){
-                ForEach(locations) { location in
-                    Annotation(location.locName, coordinate: location.coordinates){
-                        Text(location.locName)
-                            .font(.headline)
-                            .padding()
-                            .background(.blue.gradient)
-                            .clipShape(.capsule)
-                    }.annotationTitles(.hidden)
+        
+        NavigationView{
+            
+            NavigationLink {
+                // destination view to navigation to
+                BetterRestView()
+            } label: {
+                VStack {
+                    Map(){
+                        ForEach(locations) { location in
+                            Annotation(location.locName, coordinate: location.coordinates){
+                                Text(location.locName)
+                                    .font(.headline)
+                                    .padding()
+                                    .background(.blue.gradient)
+                                    .clipShape(.capsule)
+                            }.annotationTitles(.hidden)
+                        }
+                    }
+                    .cornerRadius(10)
+                    List(locations){ location in
+                        Text("\(location.locName)")
+                    }
                 }
+                .padding()
             }
-                .cornerRadius(10)
-            List(locations){ location in
-                Text("\(location.locName)")
-            }
+            .navigationTitle("Bucket List")
         }
-        .padding()
+        
     }
 }
+    
 
 #Preview {
     ContentView()
