@@ -11,6 +11,7 @@
 		1F0CCEF92B3C82C000518CC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0CCEF82B3C82C000518CC2 /* ContentView.swift */; };
 		1F0CCEFB2B3C82C200518CC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F0CCEFA2B3C82C200518CC2 /* Assets.xcassets */; };
 		1F0CCEFE2B3C82C200518CC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F0CCEFD2B3C82C200518CC2 /* Preview Assets.xcassets */; };
+		1F5A35082B3D6FFC00415ACB /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A35072B3D6FFC00415ACB /* Locations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		1F0CCEF82B3C82C000518CC2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1F0CCEFA2B3C82C200518CC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F0CCEFD2B3C82C200518CC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1F5A35072B3D6FFC00415ACB /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				1F0CCEF62B3C82C000518CC2 /* BucketListApp.swift */,
 				1F0CCEF82B3C82C000518CC2 /* ContentView.swift */,
+				1F5A35072B3D6FFC00415ACB /* Locations.swift */,
 				1F0CCEFA2B3C82C200518CC2 /* Assets.xcassets */,
 				1F0CCEFC2B3C82C200518CC2 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F5A35082B3D6FFC00415ACB /* Locations.swift in Sources */,
 				1F0CCEF92B3C82C000518CC2 /* ContentView.swift in Sources */,
 				1F0CCEF72B3C82C000518CC2 /* BucketListApp.swift in Sources */,
 			);
