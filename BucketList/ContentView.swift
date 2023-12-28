@@ -20,20 +20,18 @@ struct Users: Comparable,Identifiable{
 
 struct ContentView: View {
     
-    let users = [
+    let locations = [
     
-        Users(firstName: "Abhishek", lastName: "Banerjee"),
-        Users(firstName: "Sudhir", lastName: "Kesharwani"),
-        Users(firstName: "Khozema", lastName: "Rangwala"),
-        Users(firstName: "Huzefa", lastName: "Andmanwala"),
-    ].sorted()
+Locations(locName: "Shaniwar Wada", coordinates: CLLocationCoordinate2D(latitude: 18.5194647, longitude: 73.8527426))
+
+    ]
     
     var body: some View {
         VStack {
             Map()
                 .cornerRadius(10)
-            List(users){ user in
-                Text("\(user.lastName), \(user.firstName)")
+            List(locations){ location in
+                Text("\(location.locName)")
             }
         }
         .padding()
